@@ -1,0 +1,97 @@
+
+=head1 NAME
+
+dnw - Samsung USB Bulk Transfer Utility
+
+=head1 SYNOPSIS
+
+B<dnw> [I<OPTION>]... I<FILE>
+
+=head1 DESCRIPTION
+
+B<dnw> is a USB bulk transfer utility for Samsung devices.
+
+The purpose of this program is to transfer firmware files to a Samsung
+electronic device when this one is placed in an appropriate recovery or
+boot mode.
+
+=head1 OPTIONS
+
+B<dnw> accepts the following command line options:
+
+=over 4
+
+=item B<-a> I<ADDRESS>, B<-A> I<ADDRESS>, B<--address=>I<ADDRESS>
+
+Specify the download ADDRESS (default is c0008000). Note that this
+address may be ignored by the target device.
+
+=item B<-b> I<SIZE>, B<-B> I<SIZE>, B<--block-size=>I<SIZE>
+
+Specify the USB transfer block SIZE (default is 512).
+
+=item B<-c> I<VALUE>, B<-C> I<VALUE>, B<--config=>I<VALUE>
+
+Specify the USB configuration VALUE (default is 1).
+
+=item B<-d> I<VENDOR:PRODUCT>, B<-D> I<VENDOR:PRODUCT>, B<--device=>I<VENDOR:PRODUCT>
+
+Specify the USB VENDOR:PRODUCT ID (default is "04E8:1234").
+
+=item B<-e> I<ADDRESS>, B<-E> I<ADDRESS>, B<--endpoint=>I<ADDRESS>
+
+Specify the USB transfer bulk OUT endpoint ADDRESS (default is 2).
+
+=item B<-h>, B<-H>, B<--help>
+
+Show summary of options.
+
+=item B<-i> I<NUMBER>, B<-I> I<NUMBER>, B<--interface=>I<NUMBER>
+
+Specify the USB interface NUMBER (default is 0).
+
+=item B<-q>, B<-Q>, B<--quiet>
+
+Turn off display messages.
+
+=item B<-t> I<DURATION>, B<-T> I<DURATION>, B<--timeout=>I<DURATION>
+
+Specify the USB transfer timeout DURATION in ms (default is 3000).
+
+=item B<-v>, B<-V>, B<--version>
+
+Show version of program.
+
+=back
+
+More information on the values to specify for the above parameters can
+be found by using the L<lsusb(8)> utility on the given device.
+
+=head1 SEE ALSO
+
+B<lsusb>(8).
+
+=head1 AUTHORS
+
+Michel Stempin L<mailto://michel.stempin@wanadoo.fr>.
+
+=head1 REPORTING BUGS
+
+If you feel you have found a bug in B<dnw>, please submit a bug
+report at L<mailto://michel.stempin@wanadoo.fr>.
+
+=head1 COPYRIGHT
+
+Copyright (C) 2011 Michel Stempin L<mailto://michel.stempin@wanadoo.fr>.
+
+This program comes with NO WARRANTY, to the extent permitted by
+law. You may redistribute copies of this program under the terms of
+the GNU General Public License. For more information about these
+matters, see the file named COPYING.
+
+=head1 DISCLAIMER
+
+B<dnw> is provided ``AS IS'' and any express or implied warranties,
+including, but not limited to, the implied warranties of
+merchantability and fitness for a particular purpose are disclaimed.
+See the COPYING file distributed with B<dnw> for complete details.

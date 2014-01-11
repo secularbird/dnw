@@ -1,0 +1,61 @@
+
+ dnw - Samsung USB bulk-transfer utility
+
+ Copyright (C) 2011 Michel Stempin <michel.stempin@wanadoo.fr>
+
+ $Id: README 214 2011-03-09 23:36:14Z michel.stempin@wanadoo.fr $
+
+================================================================================
+
+This directory contains the Samsung USB bulk-transfer utility source
+files.
+
+This utility is intended to download files to a Samsung electronic
+device in USB bulk transfer mode, for example a Samsung SNE60 eReader
+stopped in the U-Boot by pressing a key at startup on the serial
+console and where you entered the `dnw' command.
+
+If you get the source files from version control (eg. svn), you should
+first run:
+
+  autoreconf --install
+
+To go back to a clean version control checkout, run:
+
+  ./autoclean
+
+See the file NEWS for a list of major changes in the current release.
+
+See the file INSTALL for compilation and installation instructions.
+
+Usage Instructions
+~~~~~~~~~~~~~~~~~~
+
+In order to perform an USB bulk-transfer of a file to a Samsung
+device, this one must beforehand be placed in an appropriate state
+where it is ready toreceive a file.
+
+On a Linux ARM-based device, this typically involves accessing the
+U-Boot bootloader through the serial console and issuing a download
+command:
+
+  dnw c0008000 (for the Samsung SNE-60 eReader device, YMMV)
+
+The `dnw' program can then be launched as root with various options (use
+--help option or see manpage for details) and at least the name of
+the file to transfer:
+
+  sudo dnw kernel.bin (for the Samsung SNE-60 eReader device kernel, again YMMV)
+
+The `dnw' program will automatically load the appropriate `secbulk.ko'
+Linux module driver to communicate with the device as required.
+
+Once transfered on the device, a typical usage would be to launch the
+kernel or to copy it to non-volatile memory using commands at the U-Boot prompt:
+
+  bootm c0008000 (for launching the Samsung SNE-60 eReader device
+                  kernel from memory, again YMMV)
+
+Mail suggestions and bug reports for these programs to:
+
+  michel.stempin@wanadoo.fr.

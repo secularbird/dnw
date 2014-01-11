@@ -1,0 +1,213 @@
+# Messages français pour l'utilitaire Samsung USB bulk-transfer.
+# Copyright © 2011, Michel Stempin
+# Michel Stempin <michel.stempin@wanadoo.fr>.
+#
+# $Id: fr.po 214 2011-03-09 23:36:14Z michel.stempin@wanadoo.fr $
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: GNU dnw 1.0.0\n"
+"Report-Msgid-Bugs-To: michel.stempin@wanadoo.fr\n"
+"POT-Creation-Date: 2011-03-10 00:38+0100\n"
+"PO-Revision-Date: 2009-05-17 13:29+0200\n"
+"Last-Translator: Michel Stempin <michel.stempin@wanadoo.fr>\n"
+"Language-Team: French <traduc@traduc.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-1\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: src/dnw.c:105
+#, c-format
+msgid "Usage: dnw [options] file\n"
+msgstr "Utilisation: dnw [options] fichier\n"
+
+#: src/dnw.c:106
+#, c-format
+msgid "Options:\n"
+msgstr "Options:\n"
+
+#: src/dnw.c:107
+#, c-format
+msgid ""
+" -a, -A, --address=ADDRESS              Specify the download ADDRESS "
+"(default is 0xc0008000)\n"
+msgstr ""
+" -a, -A, --address=ADDRESSE             Spécifie l'ADRESSE de téléchargement "
+"(le défaut est 0xc0008000)\n"
+
+#: src/dnw.c:108
+#, c-format
+msgid ""
+" -b, -B, --block-size=SIZE              Specify the USB transfer block SIZE "
+"(default is 512)\n"
+msgstr ""
+" -b, -B, --block-size=TAILLE            Spécifie la TAILLE de bloc pour le "
+"transfert USB (le défaut est 512)\n"
+
+#: src/dnw.c:109
+#, c-format
+msgid ""
+" -c, -C, --config=VALUE                 Specify the USB configuration VALUE "
+"(default is 1)\n"
+msgstr ""
+" -c, -C, --config=VALEUR                Spécifie la VALEUR de la "
+"configuration USB (le défaut est 1)\n"
+
+#: src/dnw.c:110
+#, c-format
+msgid ""
+" -d, -D, --device=VENDOR:PRODUCT        Specify the USB VENDOR:PRODUCT "
+"device ID (default is \"04E8:1234\")\n"
+msgstr ""
+" -d, -D, --device=VENDEUR:PRODUIT       Spécifie l'identifiant VENDEUR:"
+"PRODUIT USB (le défaut est \"04E8:1234\")\n"
+
+#: src/dnw.c:111
+#, c-format
+msgid ""
+" -e, -E, --endpoint=ADDRESS             Specify the USB transfer endpoint "
+"ADDRESS (default is 2)\n"
+msgstr ""
+" -e, -E, --endpoint=ADDRESSE            Spécifie l'ADDRESSE du point d'accès "
+"USB (le défaut est 2)\n"
+
+#: src/dnw.c:112
+#, c-format
+msgid " -h, -H, --help                         Print the option help\n"
+msgstr " -h, -H, --help                         Affiche l'aide des options\n"
+
+#: src/dnw.c:113
+#, c-format
+msgid ""
+" -i, -I, --interface=NUMBER             Specify the USB interface number "
+"(default is 0)\n"
+msgstr ""
+" -i, -I, --interface=NUMERO             Spécifie le NUMERO de l'interface "
+"USB (le défaut est 0)\n"
+
+#: src/dnw.c:114
+#, c-format
+msgid " -q, -Q, --quiet                        Turn off display messages\n"
+msgstr ""
+" -q, -Q, --quiet                        Désactive l'affichage des messages\n"
+
+#: src/dnw.c:115
+#, c-format
+msgid ""
+" -t, -T, --timeout=DURATION             Specify the USB transfer timemout "
+"DURATION in ms (default is 3000)\n"
+msgstr ""
+" -t, -T, --timeout=DUREE                Spécifie la DUREE des délais pour le "
+"transfert USB en ms (le défaut est 3000)\n"
+
+#: src/dnw.c:116
+#, c-format
+msgid " -v, -V, --version                      Print the version information\n"
+msgstr ""
+" -v, -V, --version                      Affiche les informations de version\n"
+
+#: src/dnw.c:124
+#, c-format
+msgid "USB bulk-transfer utility for Samsung devices.\n"
+msgstr "Utilitaire de transfert bulk USB pour les appareils Samsung.\n"
+
+#: src/dnw.c:125
+#, c-format
+msgid "Copyright (C) 2011, Michel Stempin <michel.stempin@wanadoo.fr>\n"
+msgstr "Copyright (C) 2011, Michel Stempin <michel.stempin@wanadoo.fr>\n"
+
+#: src/dnw.c:126
+#, c-format
+msgid ""
+"License GPL2+: GNU GPL version 2 or later <http://www.gnu.org/licenses/gpl-"
+"2.0.html>.\n"
+msgstr ""
+"License GPL2+: GNU GPL version 2 ou ultérieure <http://www.gnu.org/licenses/"
+"gpl-2.0.html>.\n"
+
+#: src/dnw.c:127
+#, c-format
+msgid "This is free software: you are free to change and redistribute it.\n"
+msgstr ""
+"Ceci est un logiciel libre, vous êtes libre de le modifier et de le "
+"redistribuer.\n"
+
+#: src/dnw.c:128
+#, c-format
+msgid "There is NO WARANTY, to the extent permitted by law.\n"
+msgstr ""
+"Ce logiciel n'est accompagné d'ABSOLUMENT AUCUNE GARANTIE, dans les limites "
+"autorisées par la loi applicable.\n"
+
+#: src/dnw.c:272
+#, c-format
+msgid "Target USB device found!\n"
+msgstr "Périphérique USB destination trouvé !\n"
+
+#: src/dnw.c:276
+msgid "Cannot open USB device"
+msgstr "Impossible d'ouvrir le périphérique USB"
+
+#: src/dnw.c:280
+msgid "Cannot set configuration for USB device"
+msgstr "Impossible de choisir la configuration pour le périphérique USB"
+
+#: src/dnw.c:285
+msgid "Cannot claim interface for USB device"
+msgstr "Impossible de réclamer l'interface pour le périphérique USB"
+
+#: src/dnw.c:293
+#, c-format
+msgid "Target USB device not found!\n"
+msgstr "Périphérique USB destination non trouvé !\n"
+
+#: src/dnw.c:308
+msgid "Cannot open file"
+msgstr "Impossible d'ouvrir le fichier"
+
+#: src/dnw.c:314
+msgid "Cannot get file size"
+msgstr "Impossible d'obtenir la taille du fichier"
+
+#: src/dnw.c:321
+msgid "Cannot allocate buffer memory"
+msgstr "Impossible d'allouer la mémoire tampon"
+
+#: src/dnw.c:327
+msgid "Cannot read file"
+msgstr "Impossible de lire le fichier"
+
+#: src/dnw.c:336
+#, c-format
+msgid "Filename : %s\n"
+msgstr "Nom du fichier   : %s\n"
+
+#: src/dnw.c:337
+#, c-format
+msgid "Filesize : %ld bytes\n"
+msgstr "Taille du fichier: %ld octets\n"
+
+#: src/dnw.c:338
+#, c-format
+msgid "Checksum : %#04x\n"
+msgstr "Somme de contrôle: %#04x\n"
+
+#: src/dnw.c:399
+#, c-format
+msgid "Writing data...\n"
+msgstr "Ecriture des données...\n"
+
+#: src/dnw.c:408
+msgid "USB transfer failed"
+msgstr "Le transfert USB a échoué"
+
+#: src/dnw.c:413
+#, c-format
+msgid "\r%d%%\t %d bytes     "
+msgstr "\r%d%%\t %d octets     "
+
+#: src/dnw.c:420
+#, c-format
+msgid "Done!\n"
+msgstr "Terminé !\n"

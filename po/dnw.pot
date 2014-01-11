@@ -1,0 +1,190 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Michel Stempin
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: michel.stempin@wanadoo.fr\n"
+"POT-Creation-Date: 2011-03-10 00:38+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/dnw.c:105
+#, c-format
+msgid "Usage: dnw [options] file\n"
+msgstr ""
+
+#: src/dnw.c:106
+#, c-format
+msgid "Options:\n"
+msgstr ""
+
+#: src/dnw.c:107
+#, c-format
+msgid ""
+" -a, -A, --address=ADDRESS              Specify the download ADDRESS "
+"(default is 0xc0008000)\n"
+msgstr ""
+
+#: src/dnw.c:108
+#, c-format
+msgid ""
+" -b, -B, --block-size=SIZE              Specify the USB transfer block SIZE "
+"(default is 512)\n"
+msgstr ""
+
+#: src/dnw.c:109
+#, c-format
+msgid ""
+" -c, -C, --config=VALUE                 Specify the USB configuration VALUE "
+"(default is 1)\n"
+msgstr ""
+
+#: src/dnw.c:110
+#, c-format
+msgid ""
+" -d, -D, --device=VENDOR:PRODUCT        Specify the USB VENDOR:PRODUCT "
+"device ID (default is \"04E8:1234\")\n"
+msgstr ""
+
+#: src/dnw.c:111
+#, c-format
+msgid ""
+" -e, -E, --endpoint=ADDRESS             Specify the USB transfer endpoint "
+"ADDRESS (default is 2)\n"
+msgstr ""
+
+#: src/dnw.c:112
+#, c-format
+msgid " -h, -H, --help                         Print the option help\n"
+msgstr ""
+
+#: src/dnw.c:113
+#, c-format
+msgid ""
+" -i, -I, --interface=NUMBER             Specify the USB interface number "
+"(default is 0)\n"
+msgstr ""
+
+#: src/dnw.c:114
+#, c-format
+msgid " -q, -Q, --quiet                        Turn off display messages\n"
+msgstr ""
+
+#: src/dnw.c:115
+#, c-format
+msgid ""
+" -t, -T, --timeout=DURATION             Specify the USB transfer timemout "
+"DURATION in ms (default is 3000)\n"
+msgstr ""
+
+#: src/dnw.c:116
+#, c-format
+msgid " -v, -V, --version                      Print the version information\n"
+msgstr ""
+
+#: src/dnw.c:124
+#, c-format
+msgid "USB bulk-transfer utility for Samsung devices.\n"
+msgstr ""
+
+#: src/dnw.c:125
+#, c-format
+msgid "Copyright (C) 2011, Michel Stempin <michel.stempin@wanadoo.fr>\n"
+msgstr ""
+
+#: src/dnw.c:126
+#, c-format
+msgid ""
+"License GPL2+: GNU GPL version 2 or later <http://www.gnu.org/licenses/gpl-"
+"2.0.html>.\n"
+msgstr ""
+
+#: src/dnw.c:127
+#, c-format
+msgid "This is free software: you are free to change and redistribute it.\n"
+msgstr ""
+
+#: src/dnw.c:128
+#, c-format
+msgid "There is NO WARANTY, to the extent permitted by law.\n"
+msgstr ""
+
+#: src/dnw.c:272
+#, c-format
+msgid "Target USB device found!\n"
+msgstr ""
+
+#: src/dnw.c:276
+msgid "Cannot open USB device"
+msgstr ""
+
+#: src/dnw.c:280
+msgid "Cannot set configuration for USB device"
+msgstr ""
+
+#: src/dnw.c:285
+msgid "Cannot claim interface for USB device"
+msgstr ""
+
+#: src/dnw.c:293
+#, c-format
+msgid "Target USB device not found!\n"
+msgstr ""
+
+#: src/dnw.c:308
+msgid "Cannot open file"
+msgstr ""
+
+#: src/dnw.c:314
+msgid "Cannot get file size"
+msgstr ""
+
+#: src/dnw.c:321
+msgid "Cannot allocate buffer memory"
+msgstr ""
+
+#: src/dnw.c:327
+msgid "Cannot read file"
+msgstr ""
+
+#: src/dnw.c:336
+#, c-format
+msgid "Filename : %s\n"
+msgstr ""
+
+#: src/dnw.c:337
+#, c-format
+msgid "Filesize : %ld bytes\n"
+msgstr ""
+
+#: src/dnw.c:338
+#, c-format
+msgid "Checksum : %#04x\n"
+msgstr ""
+
+#: src/dnw.c:399
+#, c-format
+msgid "Writing data...\n"
+msgstr ""
+
+#: src/dnw.c:408
+msgid "USB transfer failed"
+msgstr ""
+
+#: src/dnw.c:413
+#, c-format
+msgid "\r%d%%\t %d bytes     "
+msgstr ""
+
+#: src/dnw.c:420
+#, c-format
+msgid "Done!\n"
+msgstr ""

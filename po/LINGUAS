@@ -1,0 +1,9 @@
+# Samsung USB bulk-transfer utility
+# Copyright (C) 2011, Michel Stempin <michel.stmepin@wanadoo.fr>
+# All rights reserved.
+#
+# Set of available languages.
+#
+# $Id: LINGUAS 214 2011-03-09 23:36:14Z michel.stempin@wanadoo.fr $
+#
+fr
